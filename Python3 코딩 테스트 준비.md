@@ -68,4 +68,16 @@ print((lambda a,b:a + b)(3,7))
 
 ![image](https://user-images.githubusercontent.com/84304802/168477179-7d209ce5-f30a-451c-a6f3-76f13e7d815a.png)
 
+<br>
+
+```
+list1 = [1,2,3,4,5]
+list2 = [6,7,8,9,10]
+
+result = map(lambda a, b:a+b, list1,list2)
+print(list(result))
+```
+
+![image](https://user-images.githubusercontent.com/84304802/168477567-12be3dbc-6262-4357-b3f4-b0c6264f00f4.png)
+
 ---
