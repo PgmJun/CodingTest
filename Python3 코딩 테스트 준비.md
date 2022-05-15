@@ -35,5 +35,14 @@ input=sys.stdin.readline`
 
 ![image](https://user-images.githubusercontent.com/84304802/168474680-318ddc6d-15b9-4d4f-83d4-41e3e29138fc.png)
 
+**📝 조건부 표현식(if else문 한 줄에 작성)**
+
+`score = 85
+result = "Success" if score > 80 else "Fail"`
+
+
+![image](https://user-images.githubusercontent.com/84304802/168476074-bd7f0c22-0af5-4a77-a068-74fcdfb34927.png)
+
+
 
 
