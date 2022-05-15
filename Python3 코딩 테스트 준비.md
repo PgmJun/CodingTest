@@ -59,3 +59,13 @@ def plus():
 ![image](https://user-images.githubusercontent.com/84304802/168476732-d0483aa6-7695-445e-a7fc-822c624b59ea.png)
 
 ---
+
+**📝 람다 표현식 - 함수를 간단하게 **
+
+```
+print((lambda a,b:a + b)(3,7))
+```
+
+![image](https://user-images.githubusercontent.com/84304802/168477179-7d209ce5-f30a-451c-a6f3-76f13e7d815a.png)
+
+---
