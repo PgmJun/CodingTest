@@ -43,7 +43,6 @@ result = "Success" if score > 80 else "Fail"`
 **📝 global 전역 변수**
 
 `a = 0
-
 def plus():
   global a
   a+=1`
