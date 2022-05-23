@@ -94,3 +94,7 @@ print(list(result))
 ![image](https://user-images.githubusercontent.com/84304802/168477567-12be3dbc-6262-4357-b3f4-b0c6264f00f4.png)
 
 ---
+**📝 방향 벡터**
+
+![image](https://user-images.githubusercontent.com/84304802/169856951-6ae880b3-579e-41fa-9543-088065df049e.png)
+
