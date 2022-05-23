@@ -10,11 +10,11 @@ n = input()
 result = int(n[0])
 
 for i in range(1,len(n)-1):
-    if int(n[i]) <= 1 or result == 0:
-        result += int(n[i])
+    num = int(n[i])
+    
+    if num <= 1 or result <= 1:
+        result += num
     else:
-        
-        result *= int(n[i])
+        result *= num
         
 print(result)
-        
