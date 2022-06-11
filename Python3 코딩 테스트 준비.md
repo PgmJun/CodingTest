@@ -121,7 +121,7 @@ print(stack[::-1]) #스택 역순으로 출력
 
 **📝 큐(queue) 구현**
 <br>
-스택: FIFO구조(First In First Out)<br>
+: FIFO구조(First In First Out)<br>
 배기관 모양의 구조 / 처음에 들어온 값이 먼저 나감<br>
 
 ```
