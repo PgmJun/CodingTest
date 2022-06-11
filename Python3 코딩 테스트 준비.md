@@ -101,12 +101,36 @@ print(list(result))
 
 ---
 
-**📝 큐(queue) 구현 **
+**📝 스택(stack) 구현**
+<br>
+스택: LIFO구조(Last In First Out)<br>
+프링글스통 모양의 구조 / 마지막에 들어온 값이 먼저 나감<br>
+
+```
+stack = list() #스택 선언
+
+stack.append(1) #스택에 값 추가
+stack.pop() #마지막에 들어온 값 제거
+
+print(stack) #스택 출력
+print(stack[::-1]) #스택 역순으로 출력
+```
+
+
+---
+
+**📝 큐(queue) 구현**
+<br>
+스택: FIFO구조(First In First Out)<br>
+배기관 모양의 구조 / 처음에 들어온 값이 먼저 나감<br>
 
 ```
 from collections import deque
 
-queue = deque()
+queue = deque() #큐 선언
+
+queue.append(1) #큐에 값 추가
+queue.popleft() #큐에 값 제거
 ```
 
 ![image](https://user-images.githubusercontent.com/84304802/173166589-24ead85b-8853-4586-9e91-1daa88537cd7.png)
