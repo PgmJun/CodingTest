@@ -252,14 +252,17 @@ bfs(graph,1,visited)
 
 ```
 
-**📝 삼항 연산자 **
+---
+
+** 📝 삼항 연산자 **
 <br>
 ```
 [true_value] if [condition] else [false_value]
 ```
 
+---
 
-**📝 바다 코끼리 연산자 := **
+** 📝 바다 코끼리 연산자 := **
 <br>
 ```
 # 조건문 내부에서 s에 input()값을 대입하여 즉석에서 while문의 조건 판단
