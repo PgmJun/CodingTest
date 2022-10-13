@@ -270,7 +270,7 @@ bfs(graph,1,visited)
 
 ---
 
-** 📝 삼항 연산자 **
+**📝 삼항 연산자**
 <br>
 ```
 [true_value] if [condition] else [false_value]
@@ -278,10 +278,37 @@ bfs(graph,1,visited)
 
 ---
 
-** 📝 바다 코끼리 연산자 := **
+**📝 바다 코끼리 연산자 :=**
 <br>
 ```
 # 조건문 내부에서 s에 input()값을 대입하여 즉석에서 while문의 조건 판단
 while(s:= input()) != 0:
     print(s)
 ```
+
+---
+
+**📝 집합(&, |)**
+
+### 합집합
+```
+a = {1, 2, 3}
+b = {1, 2}
+
+a |= b
+print(a)
+```
+
+![image](https://user-images.githubusercontent.com/84304802/195637199-3dc9ea37-5831-44d6-91eb-06d68864c16e.JPG)
+### 교집합
+```
+a = {1, 2, 3}
+b = {1, 2}
+
+a &= b
+print(a)
+```
+
+![image](https://user-images.githubusercontent.com/84304802/195637210-e5ec5b39-22de-4632-b5df-fd908eee441b.JPG)
+
+---
