@@ -24,5 +24,5 @@ for i in range(1, conn+1):
     node1, node2 = map(int, input().split())
     graph[node1].append(node2)
     graph[node2].append(node1)
-print(graph)
+
 bfs(1, visited)
