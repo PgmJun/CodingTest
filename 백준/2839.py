@@ -17,7 +17,6 @@ if n > 3:
         if n > 5:
             for i in range(6,n+1):
                 if dp[i-3] == -1 and dp[i-5] == -1:
-                    dp[i] = -1
                     continue
                 if dp[i-3] != -1 and dp[i-5] != -1:
                     dp[i] = min(dp[i-3]+1, dp[i-5]+1)
@@ -25,5 +24,5 @@ if n > 3:
                     dp[i] = dp[i-3]+1
                 elif dp[i-3] == -1 and dp[i-5] != -1:
                     dp[i] = dp[i-5]+1
-                    
+
 print(dp[n])
