@@ -1,4 +1,7 @@
-for i in range(1):
+import sys
+input=sys.stdin.readline
+
+for i in range(3):
     n = int(input())
     sum = 0
     for j in range(n):
