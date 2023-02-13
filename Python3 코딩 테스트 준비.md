@@ -346,3 +346,12 @@ print(a)
 ![image](https://user-images.githubusercontent.com/84304802/195637210-e5ec5b39-22de-4632-b5df-fd908eee441b.JPG)
 
 ---
+
+**📝 2차원 배열 정렬**
+```
+# index 0번을 오름차순 정렬 후, 1번 index가 같은 값이면 1번 index 오름차순 정렬
+arr.sort()
+
+# index 1번 오름차순 정렬 후, 1번 index가 같은 값이면 0번 index 오름차순 정렬
+arr.sort(key=lambda x: (x[1], x[0]))
+```
