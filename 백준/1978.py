@@ -1,16 +1,17 @@
-import math
-
-
-def is_prime_number(nlist):
+n = int(input())
+arr = list(map(int,input().split()))
+result = 0
+for v in arr:
+    if v == 1:
+        continue
     cnt = 0
-    for x in nlist:
-        for i in range(2, int(math.sqrt(x)) + 1):
-            if x % i == 0:
-                break
-        cnt += 1
-    return cnt
+    for i in range(2,v):
+        if cnt > 1:
+            break
+        if v % i == 0:
+            cnt += 1
+    if cnt == 0:
+        result+=1
 
-
-n = input()
-nlist = list(map(int, input().split()))
-print(is_prime_number(nlist))
+print(result)
+        
