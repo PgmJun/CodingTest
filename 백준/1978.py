@@ -14,4 +14,3 @@ for v in arr:
         result+=1
 
 print(result)
-        
