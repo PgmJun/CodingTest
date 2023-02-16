@@ -1,5 +1,12 @@
 # Python3 코딩 테스트 준비
 
+## 유용한 라이브러리
+
+### * itertools
+간편한 조합과 순열 <br>
+https://seu11ee.tistory.com/5
+
+
 ## 튜플, 리스트, 딕셔너리, 세트
 
 ### 선언
