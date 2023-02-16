@@ -1,5 +1,12 @@
 # Python3 코딩 테스트 준비
 
+## 유용한 라이브러리
+
+### * itertools
+간편한 조합과 순열 <br>
+https://seu11ee.tistory.com/5
+
+
 ## 튜플, 리스트, 딕셔너리, 세트
 
 ### 선언
@@ -346,6 +353,38 @@ print(a)
 ![image](https://user-images.githubusercontent.com/84304802/195637210-e5ec5b39-22de-4632-b5df-fd908eee441b.JPG)
 
 ---
+### 배열 활용(정렬,추출,etc)
+
+**📝 배열 정렬**
+```
+arr = [1,2,4,3]
+## sorted() : 정렬한 새로운 배열일 반환
+
+# 오름차순
+newArr = sorted(arr) # [1,2,3,4]
+
+# 내림차순
+newArr = sorted(arr,reverse=True) # [4,3,2,1]
+
+
+## list.sort() : 배열을 정렬
+
+# 오름차순
+arr.sort() # [1,2,3,4]
+
+
+## list.reverse() : 배열 뒤집기
+arr.reverse() # [3,4,2,1]
+
+```
+
+**📝 1차원 배열에서 특정 갯수 추출**
+```
+import itertools
+
+for i in itertools.combinations(arr,7):
+    print(i)
+```
 
 **📝 2차원 배열 정렬**
 ```
@@ -354,4 +393,9 @@ arr.sort()
 
 # index 1번 오름차순 정렬 후, 1번 index가 같은 값이면 0번 index 오름차순 정렬
 arr.sort(key=lambda x: (x[1], x[0]))
+
+# index 1번 오름차순 정렬 후, 1번 index가 같은 값이면 0번 index 내림차순 정렬
+arr.sort(key=lambda x: (x[1], -x[0]))
 ```
+
+
