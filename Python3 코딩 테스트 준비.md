@@ -121,6 +121,16 @@ input=sys.stdin.readline
 ```
 ![image](https://user-images.githubusercontent.com/84304802/168474680-318ddc6d-15b9-4d4f-83d4-41e3e29138fc.png)
 
+**1_. readline 사용 시, 개행문자('\n') 출력 문제**
+
+readline 사용시 입력값에 개행문자가 따라 붙는 문제가 발생한다.
+이러한 상황은 아래 코드와 같이 rstrip() 함수로 해결할 수 있다.
+
+```
+sys.stdin.readline().rstrip()
+```
+
+
 <br>
 
 **2. List 사용했는데 시간초과 나오면 set으로 변경 가능한 부분은 변경하기**
