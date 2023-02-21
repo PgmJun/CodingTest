@@ -19,6 +19,7 @@ https://seu11ee.tistory.com/5
 l = [1,2,3]
 ```
 
+
 **튜플/tuple** : 소괄호 ( )
 ```
 # 값을 변경하지 못하는 배열
@@ -119,6 +120,16 @@ import sys
 input=sys.stdin.readline
 ```
 ![image](https://user-images.githubusercontent.com/84304802/168474680-318ddc6d-15b9-4d4f-83d4-41e3e29138fc.png)
+
+**1_. readline 사용 시, 개행문자('\n') 출력 문제**
+
+readline 사용시 입력값에 개행문자가 따라 붙는 문제가 발생한다.
+이러한 상황은 아래 코드와 같이 rstrip() 함수로 해결할 수 있다.
+
+```
+sys.stdin.readline().rstrip()
+```
+
 
 <br>
 
@@ -398,4 +409,10 @@ arr.sort(key=lambda x: (x[1], x[0]))
 arr.sort(key=lambda x: (x[1], -x[0]))
 ```
 
+**📝 문자열 배열 간단한 출력**
+```
+# 간단한 출력
+l = ['a','b','c','d']
+print(''.join(l)) # abcd
+```
 
