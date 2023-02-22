@@ -10,7 +10,6 @@ import itertools
 # numbers로 만들 수 있는 수가 소수이면 answer+=1 (check[num] == True: answer+=1)
 def findSosu(n):
     check = [True] * (n+1)
-    sosuArr = []
     check[0],check[1] = False,False
     for i in range(2, int(n**0.5) + 1):
         for j in range(i+i,n+1,i):
