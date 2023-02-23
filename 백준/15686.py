@@ -25,12 +25,12 @@ for i in range(len(chicArr)):
         chicLength[i].append(abs(chicArr[i][0]-hx) + abs(chicArr[i][1]-hy))
 
 result = 1e9
-# chicLength에 저장되는 치킨거리와 C에서 출력되는 치킨거리가 다름
-for c in itertools.combinations(chicLength, m):
-    print(c)
-    for i in range(len(homeArr)):
-        for j in range(1, m):
-            c[0][i] = min(c[0][i], c[j][i])
-    result = min(result, sum(c[0]))
+for c in list(itertools.combinations(chicLength, m)):
+
+    v = [1e9 for _ in range(len(homeArr))]
+    for j in range(m):
+        for i in range(len(homeArr)):
+            v[i] = min(v[i], c[j][i])
+    result = min(result, sum(v))
 
 print(result)
