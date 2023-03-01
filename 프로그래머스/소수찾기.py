@@ -8,30 +8,33 @@ import itertools
 # 2부터 n의 배수들을 소수가 아닌 것(False)으로 처리
 
 # numbers로 만들 수 있는 수가 소수이면 answer+=1 (check[num] == True: answer+=1)
+
+
 def findSosu(n):
     check = [True] * (n+1)
-    check[0],check[1] = False,False
+    check[0], check[1] = False, False
     for i in range(2, int(n**0.5) + 1):
-        for j in range(i+i,n+1,i):
+        for j in range(i+i, n+1, i):
             if check[j] == True:
                 check[j] = False
 
     return check
 
+
 def solution(numbers):
     answer = 0
     numArr = set()
-    for i in range(1,len(numbers)+1):
-        for n in itertools.permutations(numbers,i):
+    for i in range(1, len(numbers)+1):
+        for n in itertools.permutations(numbers, i):
             v = int(''.join(n))
             if v in numArr:
                 continue
             numArr.add(v)
-    
+
     check = findSosu(max(numArr))
-    
+
     for num in numArr:
         if check[num]:
             answer += 1
-    
+
     return answer
