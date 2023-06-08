@@ -1,6 +1,6 @@
 # [unrated] 배열 만들기 2 - 181921 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181921?language=python3) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181921) 
 
 ### 성능 요약
 
