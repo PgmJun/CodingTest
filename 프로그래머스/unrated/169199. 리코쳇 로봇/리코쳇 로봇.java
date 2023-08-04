@@ -47,7 +47,7 @@ class Solution {
 			Node now = queue.poll();
 			x = now.x;
 			y = now.y;
-			if(visited[x][y]) {
+			if (visited[x][y]) {
 				continue;
 			}
 			if (graph[x][y].equals("G")) {
@@ -59,19 +59,19 @@ class Solution {
 
 			// TODO: 미끄러지는 로직 구현
 			for (int i = 0; i < 4; i++) {
-				// 북쪽으로 이동할 때는 장애물이 없고, nx가 0보다 클 때 이동
+				// 북쪽으로 이동할 때는 다음 칸에 장애물이 없고, x가 0보다 클 때 이동
 				if (i == 0) {
 					moveNorth(now, i);
 				}
-				// 남쪽으로 이동할 때는 장애물이 없고, nx가 HEIGHT-1보다 작을 때 이동
+				// 남쪽으로 이동할 때는 다음 칸에 장애물이 없고, x가 HEIGHT-1보다 작을 때 이동
 				else if (i == 1) {
 					moveSouth(now, i);
 				}
-				// 서쪽으로 이동할 때는 장애물이 없고, ny가 0보다 클 떄 이동
+				// 서쪽으로 이동할 때는 다음 칸에 장애물이 없고, y가 0보다 클 떄 이동
 				else if (i == 2) {
 					moveWest(now, i);
 				}
-				// 동쪽으로 이동할 때는 장애물이 없고, ny가 WIDTH일때 멈춤
+				// 동쪽으로 이동할 때는 다음 칸에 장애물이 없고, y가 WIDTH-1 보다 작을 때 이동
 				else if (i == 3) {
 					moveEast(now, i);
 				}
@@ -99,7 +99,7 @@ class Solution {
 		int nx = x;
 		int ny = y;
 
-		for (int j = x; j < HEIGHT-1; j++) {
+		for (int j = x; j < HEIGHT - 1; j++) {
 			if (graph[nx + dx[i]][ny + dy[i]].equals("D"))
 				break;
 			nx += dx[i];
@@ -112,7 +112,7 @@ class Solution {
 		int nx = x;
 		int ny = y;
 
-		for (int j = y; j < WIDTH-1; j++) {
+		for (int j = y; j < WIDTH - 1; j++) {
 			if (graph[nx + dx[i]][ny + dy[i]].equals("D"))
 				break;
 			nx += dx[i];
@@ -144,19 +144,6 @@ class Solution {
 			this.y = y;
 			this.depth = depth;
 		}
-
-		public int getX() {
-			return x;
-		}
-
-		public int getY() {
-			return y;
-		}
-
-		public int getDepth() {
-			return depth;
-		}
-
 	}
 
 	private static Node init(String[] board) {
