@@ -61,8 +61,8 @@ class Solution {
 				continue;
 			}
 			for (Edge next : graph.get(nIndex)) {
-				int dis = Math.max(costs[nIndex], next.cost);
-				if (dis < costs[next.index]) {
+				int dis = Math.max(costs[nIndex], next.cost); // 두 경로 상의 indensity 구하기
+				if (dis < costs[next.index]) { // next.index 경로의 최소 indensity 구하기
 					costs[next.index] = dis;
 					pq.offer(new Edge(next.index, dis));
 				}
