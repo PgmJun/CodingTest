@@ -1,6 +1,3 @@
-// BFS로 학교까지 최단 경로 찾기
-
-
 class Solution {
     private static int[][] map;
     private static final int MOD = 1000000007;
