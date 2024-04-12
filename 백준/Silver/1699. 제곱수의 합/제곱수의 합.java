@@ -14,6 +14,11 @@ public class Main {
         for(int i = 1; i <= n; i++) {
             // 초기값: 1제곱이 i개인 경우
             dp[i] = i;
+            // 만약 i의 제곱근이 1이면 dp[i] = 1
+            if(Math.sqrt(i) == 1) {
+                dp[i] = 1;
+                continue;
+            }
             for(int j = 1; j * j <= i; j++) {
                 // 만약 i보다 작은 제곱수를 뺀 것에 +1 한 값이 dp[i]보다 작다면 dp[i] 교체
                 // ex) i == 17 일때 i보다 작은 제곱값들인 1 2 4 9 16 을 뺀 dp[16], dp[15], dp[13], dp[8], dp[1] 의 값에 + 1한 값들을 dp[i]와 비교
