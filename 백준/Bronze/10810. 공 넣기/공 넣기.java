@@ -1,12 +1,11 @@
 import java.io.*;
-import java.util.StringJoiner;
 
 class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] nm = br.readLine().split(" ");
 
-        String[] bucket = new String[Integer.parseInt(nm[0])];
+        int[] bucket = new int[Integer.parseInt(nm[0])];
         int count = Integer.parseInt(nm[1]);
 
         for(int i = 0; i < count; i++) {
@@ -17,19 +16,16 @@ class Main {
             String number = fromToNumber[2];
 
             for(int j = from; j <= to; j++) {
-                bucket[j] = number;
+                bucket[j] = Integer.parseInt(number);
             }
         }
 
-        StringJoiner answer = new StringJoiner(" ");
-        for (String s : bucket) {
-            if(s == null) {
-                answer.add("0");
+        for (int s : bucket) {
+            if(s == 0) {
+                System.out.print("0 ");
             } else {
-                answer.add(s);
+                System.out.print(s + " ");
             }
         }
-
-        System.out.println(answer);
     }
 }
